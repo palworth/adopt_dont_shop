@@ -22,13 +22,7 @@ RSpec.describe "On the single shelter page", type: :feature do
     expect(page).to have_content(shelter_1.city)
     expect(page).to have_content(shelter_1.state)
     expect(page).to have_content(shelter_1.zip)
-
-    visit "/shelters/#{shelter_2.id}"
-
-    expect(page).to have_content(shelter_1.name)
-    expect(page).to have_content(shelter_1.address)
-    expect(page).to have_content(shelter_1.city)
-    expect(page).to have_content(shelter_1.state)
-    expect(page).to have_content(shelter_1.zip)
   end
 end
+
+  
