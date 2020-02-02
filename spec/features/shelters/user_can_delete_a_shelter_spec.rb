@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 RSpec.describe "shelters/:id show page", type: :feature do
   context "as a visitor" do
     it "when I visit a shelter show page to delete the shelter" do
