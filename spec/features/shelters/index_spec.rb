@@ -18,6 +18,8 @@ RSpec.describe "On the Index page", type: :feature do
     visit "/shelters"
 
     expect(page).to have_content(shelter_1.name)
+    expect(page).to have_link("Edit Shelter")
     expect(page).to have_content(shelter_2.name)
+    expect(page).to have_button("Delete Shelter")
   end
 end
